@@ -1,0 +1,44 @@
+.grow {
+  animation: grow;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.shrink {
+  animation: shrink;
+  animation-duration: 0.1s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+@keyframes grow {
+  0% {
+  }
+  100% {
+    transform: scale(1.004);
+  }
+}
+@keyframes shrink {
+  0% {
+    transform: scale(1.004);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1400px) {
+  .statement h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .statement h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .statement h1 {
+    font-size: 1.75rem;
+  }
+}

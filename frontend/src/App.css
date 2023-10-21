@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: White;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading {
+  mix-blend-mode: multiply;
+  position: fixed;
+  top: 40vh;
+  width: 10%;
+}
+
+.hover {
+  transform: scale(1.03);
+}
+
+.hidden {
+  display: none;
+}
+
+.fadeout {
+  animation-name: fadeout;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.fadein {
+  animation-name: fadein;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

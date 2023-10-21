@@ -1,0 +1,135 @@
+.specific-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  background: none;
+  text-transform: capitalize;
+  border-bottom: 3px solid rgba(146, 145, 131, 0.5);
+}
+
+.project-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding-bottom: 1%;
+  border-bottom: 3px solid rgba(146, 145, 131, 0.5);
+}
+
+.year-role-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  column-gap: 15%;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  background: none;
+}
+
+.description-image-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  width: auto;
+  height: 100%;
+  /* background-color: green; */
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  pointer-events: none;
+}
+.description p {
+  line-height: 1.7;
+  font-size: calc(0.7vw + 0.7vh);
+  text-transform: none;
+  text-align: left;
+  word-wrap: normal;
+  word-break: normal;
+  font-family: "Alata", sans-serif;
+}
+
+.specific-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 59%;
+  height: auto;
+}
+
+.project-img-container {
+  width: 99%;
+  height: calc(20vh + 20vw);
+  /* background-color: red; */
+}
+
+.project-imgs {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.project-title-container h1 {
+  font-size: calc(2vh + 2vw);
+  color: #353d93;
+  font-family: "Montserrat", sans-serif;
+}
+
+.year-role-container h3,
+span {
+  font-size: calc(0.7vh + 0.7vw);
+  text-align: left;
+}
+
+.year-role-container span {
+  color: #353d93;
+}
+
+@media (max-width: 640px) {
+  .project-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .year-role-container {
+    padding-bottom: 25px;
+  }
+
+  .specific-project {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description-image-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .specific-imgs {
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+  }
+}

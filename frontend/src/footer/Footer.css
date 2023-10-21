@@ -1,0 +1,128 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 215px;
+
+  position: relative;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(to left, white, rgba(53, 61, 147, 0.3));
+}
+
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  background: none;
+}
+
+.footer-phone-address {
+  font-size: 0.7rem;
+  color: #929183;
+  background: none;
+}
+
+.footer-phone-address h5 {
+  background: none;
+  text-align: right;
+}
+
+.footer-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6%;
+  align-items: center;
+  width: 30%;
+  text-transform: uppercase;
+  color: #353d93;
+  font-size: 1rem;
+  background: none;
+}
+
+.footer-links-container h4 {
+  cursor: pointer;
+  background: none;
+}
+
+.footer-links-container h4:hover {
+  color: white;
+}
+
+.copyright-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  color: #353d93;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  pointer-events: none;
+  background: none;
+}
+
+.copyright-container i {
+  padding-right: 3px;
+  font-size: 15px;
+  background: none;
+}
+
+.copyright-container h4 {
+  background: none;
+}
+
+#footer-logo {
+  width: 30%;
+  height: auto;
+  mix-blend-mode: multiply;
+  object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .copyright-container {
+    font-size: 0.6rem;
+  }
+  .footer-links-container {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 640px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo-container {
+    flex-direction: row;
+    width: 85%;
+    gap: 50px;
+    height: auto;
+  }
+
+  .footer-links-container {
+    width: 90%;
+  }
+
+  .copyright-container {
+    width: 60%;
+    padding: 15px 0 15px 0;
+  }
+}

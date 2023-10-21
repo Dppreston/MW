@@ -1,0 +1,89 @@
+span,
+h1,
+h3,
+p {
+  background: none;
+  font-family: "Alata", sans-serif;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(10%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-rows: 350px;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 0.5%;
+  width: 90%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.project-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.project-img-style {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: none;
+  cursor: pointer;
+}
+
+.project-title {
+  position: absolute;
+  background: none;
+  text-transform: capitalize;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.filter-container h1 {
+  font-size: 3rem;
+  color: #353d93;
+  pointer-events: none;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+}
+
+#description {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 640px) {
+  .project-title {
+    font-size: 2rem;
+  }
+}
